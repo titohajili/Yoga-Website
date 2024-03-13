@@ -348,6 +348,7 @@ img {
 .list__button i{
   background: var(--gradient-color);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -356,4 +357,21 @@ img {
   max-width: initial;
   width: 150px;
   left: -2.8rem;
+}
+.blur-header{
+  background-color: transparent;
+
+}
+
+.blur-header::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 100%, .3);
+  backdrop-filter: blur(23px);
+  -webkit-backdrop-filter: blur(23px);
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
