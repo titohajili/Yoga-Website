@@ -375,3 +375,74 @@ img {
   left: 0;
   z-index: -1;
 }
+/*========== HEALTH ==========*/
+
+.health__container{
+  row-gap: 2rem;
+}
+.health__data{
+  text-align: center;
+}
+
+.health__description{
+  margin-bottom: 2rem;
+}
+.health__image{
+  position: relative;
+  justify-self: center;
+}
+
+.health__img{
+  width: 320px;
+}
+
+.health__rate,
+.health__course{
+  background-color: var(--container-color);
+  padding: .5rem .75rem;
+  border-radius: .75rem;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  position: absolute;
+}
+
+.health__icon{
+  background-color: hsl(2, 100%, 95%);
+  border-radius: 50%;
+  display: flex;
+  padding: 6px;
+  font-size: 1.5rem;
+  color: hsl(2,100%,58%);
+}
+
+.health__title,
+.health__number{
+  display: block;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.health__title{
+  color: var(--title-color);
+
+}
+
+.health__number{
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.health__rate{
+  top: 4.5rem;
+  left: .5rem;
+
+}
+
+.health__course{
+  right: 0.5rem;
+  bottom: 2rem;
+}
