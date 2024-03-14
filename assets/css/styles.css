@@ -592,3 +592,54 @@ img {
 .follow__img-4{
   transform: translateX(2.5rem) rotate(-15deg);
 }
+
+/*=========== JOIN ============*/
+.join__container{
+  padding-bottom: 2rem ;
+
+}
+.join__content{
+  display: grid;
+  row-gap: 1.5rem;
+  background: var(--gradient-color);
+  border-radius: 2rem;
+  padding: 3rem 1rem 2.5rem;
+  text-align: center;
+}
+
+.join__title,
+.join__description{
+  color: var(--white-color);
+}
+
+.join__title{
+  font-size: var(--big-font-size);
+  font-family: var(--second-font);
+  margin-bottom: .75rem;
+}
+
+.join__input,
+.join__button{
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.join__input{
+  padding: 1.5rem ;
+  border-radius: 3rem;
+  margin-bottom: .75rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
+
+.join__input::placeholder{
+  color: var(--text-color-light);
+}
+
+.join__button{
+  justify-content: center;
+  box-shadow: 0 4px 12px hsla(260, 100%, 52%, .5);
+  padding: 1.25rem;
+  cursor: pointer;
+}
