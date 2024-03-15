@@ -643,3 +643,72 @@ img {
   padding: 1.25rem;
   cursor: pointer;
 }
+/*========== Fotter ===========*/
+.footer{
+  background-color: var(--first-color-dark);
+  color: var(--text-color-light);
+  padding-block: 3rem 2rem;
+}
+
+.footer__container,
+.footer__content,
+.footer__data{
+  display: grid;
+  row-gap: 2.5rem;
+}
+
+.footer__content{
+  border-bottom: 1px solid var(--text-color-light);
+  padding-bottom: 2.5rem;
+}
+.footer__logo,
+.footer__social-link{
+  background: var(--gradient-color);
+  -webkit-line-clamp: text;
+  background-clip: text;
+  color: transparent;
+}
+.footer__logo,
+.footer__title{
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  margin-bottom: 1.25rem;
+}
+
+.footer__logo{
+  display: inline-block;
+  font-weight: var(--font-medium);
+}
+
+.footer__title{
+  color: var(--white-color);
+}
+
+.footer__social,
+.footer__social-link,
+.footer__group{
+  display: flex;
+}
+
+.footer__group{
+  flex-direction: column;
+  row-gap: 2.5rem;
+  align-items: center;
+}
+
+.footer__social{
+  column-gap: 1.25rem;
+}
+
+.footer__social-link{
+  font-size: 1.5rem;
+  transition: transform .4s;
+}
+
+.footer__social-link:hover{
+  transform: translateY(-.25rem);
+}
+
+.footer__copy{
+  font-size: var(--smaller-font-size);
+}
